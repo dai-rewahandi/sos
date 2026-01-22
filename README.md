@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sos - Halaman Tautan Sosial
 
-## Getting Started
+Ini adalah proyek halaman sederhana yang menampilkan tautan ke berbagai profil sosial media dengan gaya menu radial yang interaktif. Dibuat menggunakan Next.js dan Tailwind CSS.
 
-First, run the development server:
+![Demo 1](doc/demo1.png)
+![Demo 2](doc/demo2.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Fitur
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Menu Radial**: Tombol utama akan menampilkan beberapa tombol tautan sosial di sekelilingnya saat diklik.
+- **Responsif**: Desain yang dapat menyesuaikan diri dengan berbagai ukuran layar.
+- **Tautan Sosial**: Mengarahkan pengguna ke profil GitHub, Instagram, dan Facebook.
+- **Dapat Dikustomisasi**: Mudah untuk menambah atau mengubah tautan sosial dengan memodifikasi komponen `Home`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Teknologi yang Digunakan
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Next.js](https://nextjs.org/) - Framework React
+- [React](https://reactjs.org/) - Pustaka antarmuka pengguna
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
+- [TypeScript](https://www.typescriptlang.org/) - Superset JavaScript
+- [React Icons](https://react-icons.github.io/react-icons/) - Pustaka ikon SVG
 
-## Learn More
+## 🚀 Memulai
 
-To learn more about Next.js, take a look at the following resources:
+Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1.  **Clone repositori ini:**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+    ```bash
+    git clone https://github.com/nama-pengguna-anda/nama-repositori-anda.git
+    ```
 
-## Deploy on Vercel
+2.  **Masuk ke direktori proyek:**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    ```bash
+    cd nama-repositori-anda
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3.  **Install dependensi:**
+    (Proyek ini menggunakan `bun`, tetapi Anda juga bisa menggunakan `npm` atau `yarn`)
+
+    ```bash
+    bun install
+    ```
+
+4.  **Jalankan server pengembangan:**
+
+    ```bash
+    bun dev
+    ```
+
+5.  Buka browser Anda dan kunjungi `http://localhost:3000` untuk melihat hasilnya.
+
+---
+
+Dibuat dengan ❤️ oleh [Daire Wahandi](https://github.com/dai-rewahandi)
