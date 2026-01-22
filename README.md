@@ -27,13 +27,13 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 1.  **Clone repositori ini:**
 
     ```bash
-    git clone https://github.com/nama-pengguna-anda/nama-repositori-anda.git
+    git clone https://github.com/dai-rewahandi/sos.git
     ```
 
 2.  **Masuk ke direktori proyek:**
 
     ```bash
-    cd nama-repositori-anda
+    cd sos
     ```
 
 3.  **Install dependensi:**
@@ -54,3 +54,6 @@ Untuk menjalankan proyek ini secara lokal, ikuti langkah-langkah berikut:
 ---
 
 Dibuat dengan ❤️ oleh [Daire Wahandi](https://github.com/dai-rewahandi)
+
+
+Terimakasih untuk gemini-ai untuk deskripsi ini karena saya sangat malas untuk membuatnya
