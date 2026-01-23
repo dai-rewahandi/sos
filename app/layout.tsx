@@ -20,10 +20,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} dark:bg-gray-800 dark:text-amber-50 bg-gray-200 w-dvw h-dvh flex items-center justify-center`}>
+      <body
+        className={`${inter.className} dark:bg-gray-800 dark:text-amber-50 bg-gray-200 w-dvw h-dvh flex items-center justify-center`}
+      >
         {children}
-        <p className="absolute bottom-3 left-0 right-0 text-center"> &copy; dai 2026</p>
-        
+        <p className="absolute bottom-3 left-0 right-0 text-center">
+          {" "}
+          &copy; dai 2026
+        </p>
       </body>
     </html>
   );

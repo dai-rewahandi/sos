@@ -22,14 +22,13 @@ function BtnWhiteStyle({
   offset = { x: 0, y: 0 },
   active = false,
 }: BtnWhiteStyleProps) {
-
   return (
     <AnimatePresence>
       {(label !== "child" || show) && (
         <motion.div
           whileHover={{
             scale: 1.3,
-            zIndex: 100
+            zIndex: 100,
           }}
           whileTap={{
             scale: 0.9,
