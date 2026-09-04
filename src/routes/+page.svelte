@@ -2,7 +2,9 @@
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
 	import { ScrambleTextPlugin } from 'gsap/ScrambleTextPlugin';
+	import { sosial_link } from '$lib';
 	import Icon from '@iconify/svelte';
+	import CircleRightIcon from '@iconify-svelte/fa6-solid/circle-right';
 
 	gsap.registerPlugin(ScrambleTextPlugin);
 
@@ -45,48 +47,21 @@
 </script>
 
 <main class="flex h-dvh w-dvw flex-col items-center justify-center">
-	<h1 class="flex gap-2 text-4xl font-bold">
+	<h1 class="my-3 flex gap-2 text-4xl font-bold">
 		<div id="welcome" class="text-gray-400">load..</div>
-		<div id="sosialLink">load..</div>
+		<div id="sosialLink" class="text-gray-700">load..</div>
 	</h1>
-	<ul
-		class="mt-10 flex w-[300px] flex-col flex-wrap gap-2 [&>li>a]:bg-gray-200 [&>li>a]:hover:bg-gray-100"
-	>
-		<li>
-			<a href="https://instagram.com/dai.rewahandi" class="flex items-center gap-2 rounded-md p-2" target="_blank">
-				<Icon icon="lineicons:instagram" width="24" height="24" />
-				instagram
-			</a>
-		</li>
-		<li>
-			<a href="https://x.com/dai_rewahandi" class="flex items-center gap-2 rounded-md p-2" target="_blank">
-				<Icon icon="lineicons:x" width="24" height="24" />
-				x
-			</a>
-		</li>
-		<li>
-			<a href="https://facebook.com/dai.rewahandi" class="flex items-center gap-2 rounded-md p-2" target="_blank">
-				<Icon icon="lineicons:facebook" width="24" height="24" />
-				facebook
-			</a>
-		</li>
-		<li>
-			<a href="https://github.com/dai-rewahandi" class="flex items-center gap-2 rounded-md p-2" target="_blank">
-				<Icon icon="lineicons:github" width="24" height="24" />
-				github
-			</a>
-		</li>
-		<li>
-			<a href="https://me.dairewahandi.or.id" class="flex items-center gap-2 rounded-md p-2" target="_blank">
-				<Icon icon="lineicons:globe-1" width="24" height="24" />
-				me.dairewahandi.or.id
-			</a>
-		</li>
-		<li>
-			<a href="https://gallery.dairewahandi.or.id" class="flex items-center gap-2 rounded-md p-2" target="_blank">
-				<Icon icon="lineicons:globe-1" width="24" height="24" />
-				gallery.dairewahandi.or.id
-			</a>
-		</li>
+	<ul class="flex flex-col gap-2 px-7">
+		{#each sosial_link as link}
+			<li class="flex group gap-2 items-center bg-gray-100 rounded-lg px-4 py-2 hover:bg-gray-200 transition-colors duration-300">
+				<span class="font-extrabold text-gray-600">{link.name}</span>
+				<a href={link.link} class="text-gray-500 hover:underline flex items-center gap-1" target="_blank" rel="noreferrer">
+					{link.username} <CircleRightIcon class="w-4 h-4 -rotate-45 group-hover:text-amber-600" />
+				</a>
+			</li>
+		{/each}
 	</ul>
 </main>
+
+<style>
+</style>
